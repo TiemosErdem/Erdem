@@ -26,3 +26,11 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠒⠈⠁⡀⠀⠀⠀⠑⠢⠤⠔⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 By busterthethumper [TEST TERRAFORM FILE - INFORMATION IN THIS FILE IS UPDATED MANUALLY AND THROUGH GOOGLEFORM]
 
+
+ resource "aws_route53_record" "buster_eating_carrots_com_cname" {
+  zone_id = ZONE_ID_GOES_HERE
+  name    = "bustereatingcarrots.com"
+  type    = "CNAME"
+  ttl     = "3600"
+  records = ["LOADBALANCER_GOES_HERE"]
+}
