@@ -55,3 +55,10 @@ By busterthethumper [TEST TERRAFORM FILE - INFORMATION IN THIS FILE IS UPDATED M
   ttl     = "3600"
   records = ["LOADBALANCER_GOES_HERE"]
 }
+ resource "aws_route53_record" "frank_is_awesome_com_cname" {
+  zone_id = ZONE_ID_GOES_HERE
+  name    = "frankisawesome.com"
+  type    = "CNAME"
+  ttl     = "3600"
+  records = ["LOADBALANCER_GOES_HERE"]
+}
